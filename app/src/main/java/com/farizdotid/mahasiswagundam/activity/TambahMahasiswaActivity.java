@@ -21,7 +21,7 @@ public class TambahMahasiswaActivity extends AppCompatActivity {
 //    private EditText et_tempatlahir;
     private Button button_tambahdata;
     private Button button_lihatdata;
-    private Button button_hapusdata;
+//    private Button button_hapusdata;
 
     private DBHandler dbHandler;
     private MahasiswaAdapter adapter;
@@ -40,7 +40,7 @@ public class TambahMahasiswaActivity extends AppCompatActivity {
 //        et_tempatlahir = (EditText) findViewById(R.id.et_tempatlahir);
         button_tambahdata = (Button) findViewById(R.id.button_tambahdata);
         button_lihatdata = (Button) findViewById(R.id.button_lihatdata);
-        button_hapusdata = (Button) findViewById(R.id.button_hapusdata);
+//        button_hapusdata = (Button) findViewById(R.id.button_hapusdata);
 
         button_lihatdata.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,13 +49,13 @@ public class TambahMahasiswaActivity extends AppCompatActivity {
             }
         });
 
-        button_hapusdata.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dbHandler.hapusSemuaDataMahasiswa();
-                Toast.makeText(TambahMahasiswaActivity.this, "Berhasil Menghapus Semua Data Mahasiswa", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        button_hapusdata.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                dbHandler.hapusSemuaDataMahasiswa();
+//                Toast.makeText(TambahMahasiswaActivity.this, "Berhasil Menghapus Semua Data Mahasiswa", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         button_tambahdata.setOnClickListener(new View.OnClickListener() {
             @Override

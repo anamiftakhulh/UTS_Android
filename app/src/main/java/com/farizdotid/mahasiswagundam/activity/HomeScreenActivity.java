@@ -14,7 +14,7 @@ public class HomeScreenActivity extends AppCompatActivity {
 
     private Button button_tambahdata;
     private Button button_lihatdata;
-    private Button button_hapusdata;
+//    private Button button_hapusdata;
     private DBHandler dbHandler;
 
     @Override
@@ -29,7 +29,7 @@ public class HomeScreenActivity extends AppCompatActivity {
     private void initComponents(){
         button_tambahdata = (Button) findViewById(R.id.button_tambahdata);
         button_lihatdata = (Button) findViewById(R.id.button_lihatdata);
-        button_hapusdata = (Button) findViewById(R.id.button_hapusdata);
+//        button_hapusdata = (Button) findViewById(R.id.button_hapusdata);
 
         button_tambahdata.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,12 +45,12 @@ public class HomeScreenActivity extends AppCompatActivity {
             }
         });
 
-        button_hapusdata.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dbHandler.hapusSemuaDataMahasiswa();
-                Toast.makeText(HomeScreenActivity.this, "Berhasil Menghapus Semua Data Mahasiswa", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        button_hapusdata.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                dbHandler.hapusSemuaDataMahasiswa();
+//                Toast.makeText(HomeScreenActivity.this, "Berhasil Menghapus Semua Data Kota", Toast.LENGTH_SHORT).show();
+//            }
+//        });
     }
 }

@@ -5,26 +5,32 @@
     android:id="@+id/activity_tambah_data"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context="com.farizdotid.mahasiswagundam.activity.TambahMahasiswaActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/back">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Input Data Kota"
+            android:textColor="@color/white"
             android:textAlignment="center"
-            android:paddingLeft="100sp"
+            android:paddingLeft="80sp"
             android:textSize="30dp"/>
 
         <EditText
             android:id="@+id/et_nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nama Kota"/>
+            android:layout_marginTop="20dp"
+            android:hint="Nama Kota"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
 
         <!--<EditText-->
             <!--android:id="@+id/et_tempatlahir"-->
@@ -36,23 +42,24 @@
         <Button
             android:id="@+id/button_tambahdata"
             android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
+            android:layout_marginLeft="125dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="tambah data"/>
+            android:text="Simpan" />
 
         <Button
             android:id="@+id/button_lihatdata"
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="125dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lihat data"
-            />
-        <Button
-            android:id="@+id/button_hapusdata"
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hapus data"
-            />
+            android:text="Cek Kota" />
+        <!--<Button-->
+            <!--android:id="@+id/button_hapusdata"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Hapus data"-->
+            <!--/>-->
     </LinearLayout>
 </RelativeLayout>

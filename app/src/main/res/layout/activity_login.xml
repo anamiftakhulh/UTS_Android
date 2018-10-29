@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".activity.Login"
     android:orientation="vertical"
-    android:background="@drawable/bg2">
+    android:background="@drawable/back">
 
 
     <TextView
@@ -23,7 +23,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:hint="Input Email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,7 +39,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:hint="Input Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
