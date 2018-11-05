@@ -10,10 +10,7 @@ public class Mahasiswa {
        this.nama = nama;
     }
 
-//    public Mahasiswa(String nama) {
-//        this.nama = nama;
-////        this.tempat_lahir = tempat_lahir;
-//    }
+
 
     public int getId() {
         return id;
@@ -31,11 +28,5 @@ public class Mahasiswa {
         this.nama = nama;
     }
 
-//    public String getTempat_lahir() {
-//        return tempat_lahir;
-//    }
-//
-//    public void setTempat_lahir(String tempat_lahir) {
-//        this.tempat_lahir = tempat_lahir;
-//    }
+
 }
